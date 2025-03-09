@@ -20,6 +20,7 @@ export default class State {
         track.channel.curve.assignSorted(frams);
         this.animationClip.duration = frams.length * ANIMATION_SPEED; 
         this.animationClip.wrapMode = this.wrapMode
+        this.animationClip.name = this.path;
         this.animationClip.addTrack(track);
     }
 
